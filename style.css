@@ -1,0 +1,18 @@
+*{
+    margin: 10px;
+}
+
+body{
+    background: whitesmoke;
+}
+
+
+a{
+    color: red;
+}
+
+h1{
+    font-size: 2rem; /*24pt*/
+    text-align: center;
+    text-transform: uppercase;
+}
