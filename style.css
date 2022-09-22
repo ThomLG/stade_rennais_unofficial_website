@@ -1,18 +1,58 @@
-*{
-    margin: 10px;
+body {
+  background: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: whitesmoke;
+a {
+  color: red;
+  text-decoration: none;
 }
 
-
-a{
-    color: red;
+a:hover {
+  color: rgb(184, 22, 24);
+  text-decoration: underline;
 }
 
-h1{
-    font-size: 2rem; /*24pt*/
-    text-align: center;
-    text-transform: uppercase;
+a:visited {
+  color: purple;
+}
+
+h1 {
+  background: rgb(184, 22, 24);
+  color: whitesmoke;
+  font-size: 2rem; /*24pt*/
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(184, 22, 24);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+div{
+  border: 1px grey solid;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.shirts-div {
+  text-align: center;
+}
+
+.shirts-container {
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shirts {
+  height: 500px;
+  width: 450px;
+  padding: 5px;
+  margin: 10px;
 }
