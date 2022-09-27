@@ -61,12 +61,13 @@ nav a {
 
 .main {
   background: purple;
+  overflow: hidden;
 }
 
 .container {
   background-color: yellow;
   border: 1px grey solid;
-  margin: 0;
+  margin: 20px;
 }
 
 .container img {
