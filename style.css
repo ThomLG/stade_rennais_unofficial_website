@@ -1,25 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: aquamarine;
+  background: cyan;
+  min-height: 100vh;
+  padding: 0;
 }
-/***************************** Partie header **************************************************/
+
 header {
+  background: yellow;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-#main-title {
+#mainTitle {
   background: rgb(184, 22, 24);
-  width: 80%;
+  width: 70%;
 }
 
-#main-title h1 {
-  color: whitesmoke;
-  font-size: 2rem; /*24pt*/
-  font-weight: bold;
-  text-align: center;
+#mainTitle h1 {
   text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
 }
 
 /* Menu */
@@ -30,94 +36,31 @@ nav {
 }
 nav ul {
   display: flex;
-  flex-direction: row;
+  background: green;
   list-style-type: none;
+  margin: auto;
+  text-align: left;
 }
 
 nav li {
-  margin-right: 15px;
+  margin: 0 auto;
 }
 
 nav a {
   color: whitesmoke;
   font-size: 1.3em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
-/*********************** Partie Main ********************************************************/
+/************************ Partie main ************************/
 
-
-.main {
-  background-color: blue;
-  /*padding-top: 10px;*/
+main {
+  background: purple;
 }
 
-/* mise en page générale des div dans la div main*/
-
-.main-div {
+.container {
   background-color: yellow;
   border: 1px grey solid;
-  box-shadow: 3px 3px 5px grey;
-  margin: 10px;
-}
-
-.main-div h2 {
-    color: rgb(184, 22, 24);
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-
-/* Partie stade */  
-.stadium-div img{
-    display: block;
-    border: 1px black solid;
-    margin:5px auto 10px auto;
-}
-
-
-
-/* Partie maillots */
-.shirts-div {
-  text-align: center;
-}
-
-.shirts-container {
-  border: none;
-  box-shadow: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.shirts {
-  height: 500px;
-  width: 450px;
-  padding: 5px;
-  margin: 10px;
-}
-
-.squad-table{
-    border-collapse: collapse ;
-}
-
-.squad-table caption{
-    border: 1px black solid;
-}
-.squad-table thead th{
-    border: 1px black solid ;
-}
-
-
-.squad-table td{
-    border: 1px black solid ;
-}
-
-
-/********************************Footer *******************************************************/
-
-
-.footer{
-    background-color: rgb(160, 95, 139);
+  margin: 10px auto;
 }
