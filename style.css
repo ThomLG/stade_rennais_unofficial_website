@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+} 
+
 body {
   background: cyan;
-  min-height: 100vh;
-  padding: 0;
 }
+
 
 header {
   background: yellow;
@@ -48,19 +52,28 @@ nav li {
 
 nav a {
   color: whitesmoke;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 /************************ Partie main ************************/
 
-main {
+.main {
   background: purple;
 }
 
 .container {
   background-color: yellow;
   border: 1px grey solid;
-  margin: 10px auto;
+  margin: 0;
+}
+
+.container img {
+  display: block;
+  margin : 0 auto
+}
+
+footer {
+  background: red;
 }
