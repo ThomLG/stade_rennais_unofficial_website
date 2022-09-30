@@ -3,27 +3,31 @@
 * {
   margin: 0;
   padding: 0;
-} 
-
-body {
-  background: cyan;
 }
 
+body {
+  background: #f0f0f0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
 
 header {
-  background: yellow;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
 #mainTitle {
-  background: rgb(184, 22, 24);
+  background: #ca180b;
   width: 70%;
 }
 
 #mainTitle h1 {
   text-transform: uppercase;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   padding: 10px;
   letter-spacing: 1px;
@@ -32,49 +36,302 @@ header {
   text-align: center;
 }
 
-/* Menu */
+/************************************ Menu *******************************************************/
 
 nav {
-  background-color: black;
+  background-color: black !important;
   width: 30%;
 }
+
 nav ul {
   display: flex;
-  background: green;
   list-style-type: none;
   margin: auto;
   text-align: left;
 }
 
-nav li {
-  margin: 0 auto;
-}
-
 nav a {
-  color: whitesmoke;
+  color: rgb(255, 255, 255) !important;
   font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+nav a:hover {
+  color: red !important;
+}
+
 /************************ Partie main ************************/
 
 .main {
-  background: purple;
+  background: #f0f0f0;
+  flex: 1;
   overflow: hidden;
 }
 
-.container {
-  background-color: yellow;
+.containerContent {
+  background-color: #ffffff;
   border: 1px grey solid;
   margin: 20px;
+  overflow: hidden;
 }
 
-.container img {
-  display: block;
-  margin : 0 auto
+.containerContent h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
 }
+
+/*************************************************************************************/
+
+.containerContent img {
+  display: block;
+  box-shadow: 10px 5px 5px rgba(145, 144, 144, 0.4);
+  border: 1px rgba(145, 144, 144, 0.4) solid;
+  margin: 15px auto;
+}
+
+/********************************Stade********************************************************/
+.stadiumPictureContainer {
+  margin: 15px;
+}
+
+.stadiumPictureContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/******************************** Tableau ***************************************************/
+
+.squadTable {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.squadTable,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px black solid;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/******************** Images maillots ********************************************************/
+
+.shirtPictureContainer {
+  display: flex;
+}
+
+.shirtPicture {
+  height: 450px;
+  width: 420px;
+}
+
+/**************************Palmarès*************************************************************/
+.trophyPictureContainer {
+  display: flex;
+}
+
+.trophyPicture {
+  height: 450px;
+  width: 420px;
+}
+/************************** Footer ************************************************************/
 
 footer {
-  background: red;
+  background: #ca180b;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+/************************* Formulaire *********************************************************/
+
+.formContact {
+  border: 2px black solid;
+  margin: 15px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.contactInfo input {
+  width: 20%;
+}
+
+.contactMsg {
+  margin: 10px;
+}
+
+.contactMsg textarea {
+  resize: none;
+}
+
+.submitBtnContainer {
+  text-align: center;
+}
+.submitBtn {
+  margin: 10px;
+  width: 10%;
+  height: 30px;
+}
+
+textarea {
+  width: 100%;
+}
+
+/************************* Page Palmarès ******************************************************/
+
+.trophyPictureContainer {
+  display: flex;
+}
+
+.trophyPicture {
+  height: 350px;
+  width: 270px;
+}
+
+/************************Responsivité***********************************************************/
+
+@media screen and (max-width: 1500px) {
+  .shirtPicture {
+    height: 350px;
+    width: 300px;
+  }
+}
+/************************************************************************************************/
+
+@media screen and (max-width: 1180px) {
+  #mainTitle {
+    background: #ca180b;
+    width: 60%;
+  }
+  nav {
+    /* background-color: black !important; */
+    width: 40%;
+  }
+
+  .shirtPicture {
+    height: 350px;
+    width: 300px;
+  }
+}
+
+/************************************************************************************************/
+@media screen and (max-width: 1000px) {
+  nav {
+    /* background-color: black !important; */
+    width: 50%;
+  }
+
+  .shirtPicture {
+    height: 300px;
+    width: 250px;
+  }
+  .trophyPicture {
+    height: 300px;
+    width: 250px;
+  }
+}
+
+/**********************************************************************************************/
+@media screen and (max-width: 991px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #mainTitle {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    text-align: center;
+  }
+}
+
+/************************************************************************************************/
+
+@media screen and (max-width: 900px) {
+  nav {
+    /* background-color: black !important; */
+    width: 100%;
+  }
+
+  .shirtPicture {
+    height: 280px;
+    width: 220px;
+  }
+
+  .trophyPicture {
+    height: 300px;
+    width: 250px;
+  }
+
+  .contactInfo input {
+    margin-top: 5px;
+    width: 60%;
+  }
+}
+
+/************************************************************************************************/
+
+@media screen and (max-width: 800px) {
+  #mainTitle h1 {
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  nav {
+    /* background-color: black !important; */
+    width: 100%;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  .shirtPictureContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shirtPicture {
+    height: 300px;
+    width: 250px;
+  }
+
+  .trophyPictureContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .squadTable {
+    margin: 5px auto;
+  }
+
+  .squadTable,
+  th,
+  td {
+    border-collapse: collapse;
+    border: 1px black solid;
+    padding: 5px;
+    font-size: 0.6rem;
+  }
 }
